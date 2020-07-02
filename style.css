@@ -3,7 +3,7 @@ html {
 }
 
 .row {
-  height: 90vh;
+  min-height: 90vh;
   padding-top: 10vh;
 }
 
@@ -38,6 +38,7 @@ html {
 #helloText {
   text-align: center;
   padding-top: 10%;
+  padding-right: 10%;
 }
 
 #uwImg {
@@ -116,7 +117,45 @@ html {
 }
 
 #footer {
-  border: 1px solid black;
+  border-top: 3px solid grey;
+  border-right: 3px solid black;
+  border-bottom: 3px solid grey;
+  border-left: 3px solid black;
+  margin: 10vh, 10vw, 0vh, 10vw;
+}
+
+#animate {
+  text-align: center;
+  align-items: cetner;
+  color: white;
+  width: 10vh;
+  height: 10vh;
+  position: relative;
+  left: 40vw;
+  top: 40vh;
+  border-radius: 100%;
+  animation-name: end;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+
+@keyframes end {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .pop:hover {

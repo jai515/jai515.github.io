@@ -1,0 +1,190 @@
+body {
+  margin: 0px;
+  margin-right: 0px;
+  background-color: grey;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: grid;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  width: auto;
+  max-height: 50vh;
+  border-radius: 5%;
+}
+
+#navbar {
+  z-index: 999;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background-color: grey;
+  padding: 1%;
+}
+
+#navbar > a {
+  text-align: center;
+  padding: 1vh 1vh 1vh 1vh;
+  color: black;
+  background-color: grey;
+  width: 15vw;
+  transition: background-color 0.8s;
+  border-radius: 5%;
+}
+
+#navbar > a:hover {
+  background-color: white;
+  transition: background-color 0.6s;
+}
+
+#mainContainer {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeline {
+  grid-template-areas:
+    "img1 img2 img3"
+    "text1 text2 text3";
+  align-items: normal;
+  grid-gap: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#timeline > img {
+  z-index: 99;
+  max-width: 25vw;
+  height: 25vh;
+  border-radius: 5%;
+  transition: opacity 0.5s;
+  margin: auto;
+}
+
+#timeline > img:hover {
+  opacity: 50%;
+  transition: opacity 0.5s;
+}
+
+#timeline > span {
+  max-width: 20vw;
+  height: 10vh;
+  transition: transform 1s;
+  text-align: center;
+  padding: 8% 10% 0% 10%;
+  margin: auto;
+  opacity: 0;
+}
+
+#timeline > span:hover {
+  transform: translateY(20vh);
+  opacity: 1;
+}
+
+#timeline > img:hover + span {
+  opacity: 1;
+}
+
+.timelineImg:hover + span {
+  transform: translateY(20vh);
+  transition: transform 2s;
+  transition-timing-function: ease;
+  opacity: 1;
+}
+
+#uwImg {
+  grid-area: img1;
+}
+
+#uwText {
+  grid-area: img1;
+}
+
+#armyImg {
+  grid-area: img2;
+}
+#armyText {
+  grid-area: img2;
+}
+
+#amazonImg {
+  grid-area: img3;
+}
+#amazonText {
+  grid-area: img3;
+}
+
+iframe {
+  margin: auto;
+  padding: 1%;
+  overflow: scroll;
+}
+
+#bookDisplay {
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+}
+.book {
+  width: 20vw;
+  height: auto;
+  opacity: 20%;
+  transition: opacity 0.5s;
+}
+.book:hover {
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+#bookDescription {
+  text-align: center;
+  border: solid black;
+  width: 20vw;
+  height: 8vh;
+}
+
+#book1 {
+  grid-area: a;
+}
+#book2 {
+  grid-area: b;
+}
+#book3 {
+  grid-area: c;
+}
+#book4 {
+  grid-area: d;
+}
+#book5 {
+  grid-area: e;
+}
+#book6 {
+  grid-area: f;
+}
+#book7 {
+  grid-area: g;
+}
+#book8 {
+  grid-area: h;
+}
+#book9 {
+  grid-area: i;
+}

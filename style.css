@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  /* height: 50vh; */
+  padding-top: 10vh;
+}
+
+#navbar {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+#iconImg {
+  max-height: 5vh;
+  width: auto;
+}
+
+#parallax {
+  background-image: url("./resources/SeaNeed.jpg");
+  min-height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#titleImage {
+  width: 100%;
+}
+
+#helloText {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.aboutImg {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutImg:hover + .aboutText {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.aboutText {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.aboutText:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.book {
+  max-width: 100%;
+  padding: 2%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.book:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#linkedin {
+  max-width: 20vw;
+  height: auto;
+}
+
+#linkedin:hover {
+}
+
+.pop:hover {
+  transform: scale(1.23);
+  transition: transform 0.5s;
+}
+.pop {
+  transition: transform 0.5s;
+}

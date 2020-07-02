@@ -3,8 +3,12 @@ html {
 }
 
 .row {
-  /* height: 50vh; */
+  height: 90vh;
   padding-top: 10vh;
+}
+
+.col-sm {
+  margin: auto;
 }
 
 #navbar {
@@ -36,12 +40,6 @@ html {
   padding-top: 10%;
 }
 
-.aboutImg {
-  border-radius: 10%;
-  max-width: 100%;
-  height: auto;
-}
-
 #uwImg {
   background-image: url("./resources/uw.jpg");
   background-size: cover;
@@ -63,12 +61,8 @@ html {
   background-size: cover;
   border-radius: 5%;
   height: 30vh;
-  margin: 0% 2% 5% 2%;
+  margin: auto 2% auto 2%;
 }
-/* 
-#uwImg:hover {
-  opacity: 0.5;
-} */
 
 .aboutSection > span {
   position: absolute;
@@ -101,6 +95,7 @@ html {
   padding: 2%;
   opacity: 0.5;
   transition: opacity 0.5s;
+  border-radius: 5%;
 }
 
 .book:hover {
@@ -108,12 +103,20 @@ html {
   transition: opacity 0.5s;
 }
 
-#linkedin {
-  max-width: 20vw;
+#linkedin,
+#github {
+  max-width: 8vw;
   height: auto;
+  border-radius: 10%;
+  margin: 0% 2% 0% 2%;
 }
 
-#linkedin:hover {
+.contactRow {
+  text-align: center;
+}
+
+#footer {
+  border: 1px solid black;
 }
 
 .pop:hover {

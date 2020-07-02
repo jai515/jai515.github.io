@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parallax">
+      <h1 id="helloText">
+        hey <br />
+        my name is joe
+      </h1>
+    </div>
+    <!-- <img id="titleImage" src="resources/SeaNeed.jpg" /> -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img id="iconImg" src="resources/needle.jpg" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#books">Books</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main_container" class="container">
+      <div class="row">
+        Welcome to the page
+      </div>
+
+      <div id="about" class="row">
+        <div id="uwImg" class="col-sm aboutSection">
+          <span id="uwText" class="aboutText"
+            >I attended the University of Washington in Seattle and graduated
+            with a BS in Biochemistry.</span
+          >
+        </div>
+
+        <div id="medicImg" class="col-sm aboutSection">
+          <span class="aboutText"
+            >Then joined the Army and spent 5 years giving out Motrin and
+            telling people to change their socks.</span
+          >
+        </div>
+
+        <div id="amazonImg" class="col-sm aboutSection">
+          <span class="aboutText"
+            >Now I'm an Amazon SDE Apprentice and look forward to moving back to
+            Seattle and working at Amazon.</span
+          >
+        </div>
+      </div>
+
+      <div id="books" class="row">
+        <div class="col-sm">
+          <a
+            href="https://www.amazon.com/dp/B00555X8OA/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1"
+            target="_blank"
+          >
+            <img
+              class="book pop"
+              id="book9"
+              src="resources/fastAndSlow.jpg"
+              alt="Thinking Fast and Slow"
+            />
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a
+            href="https://www.amazon.com/dp/B004DI7R5G/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1"
+            target="_blank"
+          >
+            <img
+              class="book pop"
+              id="book3"
+              src="resources/gita.jpg"
+              alt="Bhagavad Gita"
+            />
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a
+            href="https://www.amazon.com/dp/B005FVNIW6/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1"
+            target="_blank"
+          >
+            <img
+              class="book pop"
+              id="book7"
+              src="resources/ender.jpg"
+              alt="Ender's Game"
+            />
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a
+            href="https://www.amazon.com/dp/B00EKOC0HI/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1"
+            target="_blank"
+          >
+            <img
+              class="book pop"
+              id="book1"
+              src="resources/mans_search.jpg"
+              alt="Man's Search For Meaning"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="contact" class="row">
+        <div class="col-sm">
+          <a href="https://www.linkedin.com/in/joe-ip/" target="_blank">
+            <img id="linkedin" class="pop" src="resources/linkedin.jpg" />
+          </a>
+        </div>
+        <div class="col-sm"></div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

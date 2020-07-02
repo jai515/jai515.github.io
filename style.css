@@ -1,0 +1,125 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  /* height: 50vh; */
+  padding-top: 10vh;
+}
+
+#navbar {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+#iconImg {
+  max-height: 5vh;
+  width: auto;
+}
+
+#parallax {
+  background-image: url("./resources/SeaNeed.jpg");
+  min-height: 92vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#titleImage {
+  width: 100%;
+}
+
+#helloText {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.aboutImg {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+}
+
+#uwImg {
+  background-image: url("./resources/uw.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#medicImg {
+  background-image: url("./resources/medic.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#amazonImg {
+  background-image: url("./resources/amazon.jpg");
+}
+
+.aboutSection {
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  height: 30vh;
+  margin: 0% 2% 5% 2%;
+}
+/* 
+#uwImg:hover {
+  opacity: 0.5;
+} */
+
+.aboutSection > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.aboutSection:hover > span {
+  transform: translateY(100%);
+  opacity: 1;
+  transition: opacity 1s, translateY 10s;
+  background-color: white;
+  background-size: cover;
+  text-align: center;
+  color: black;
+}
+
+.aboutText {
+  opacity: 0;
+  /* transition: opacity 1s; */
+}
+
+.aboutText:hover {
+  opacity: 1;
+  /* transition: opacity 1s; */
+}
+
+.book {
+  max-width: 100%;
+  padding: 2%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.book:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#linkedin {
+  max-width: 20vw;
+  height: auto;
+}
+
+#linkedin:hover {
+}
+
+.pop:hover {
+  transform: scale(1.23);
+  transition: transform 0.5s;
+}
+.pop {
+  transition: transform 0.5s;
+}

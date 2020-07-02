@@ -42,19 +42,58 @@ html {
   height: auto;
 }
 
-.aboutImg:hover + .aboutText {
+#uwImg {
+  background-image: url("./resources/uw.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#medicImg {
+  background-image: url("./resources/medic.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#amazonImg {
+  background-image: url("./resources/amazon.jpg");
+}
+
+.aboutSection {
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  height: 30vh;
+  margin: 0% 2% 5% 2%;
+}
+/* 
+#uwImg:hover {
+  opacity: 0.5;
+} */
+
+.aboutSection > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.aboutSection:hover > span {
+  transform: translateY(100%);
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 1s, translateY 10s;
+  background-color: white;
+  background-size: cover;
+  text-align: center;
+  color: black;
 }
 
 .aboutText {
   opacity: 0;
-  transition: opacity 1s;
+  /* transition: opacity 1s; */
 }
 
 .aboutText:hover {
   opacity: 1;
-  transition: opacity 1s;
+  /* transition: opacity 1s; */
 }
 
 .book {

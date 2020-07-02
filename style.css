@@ -117,44 +117,92 @@ html {
 }
 
 #footer {
-  border-top: 3px solid grey;
-  border-right: 3px solid black;
-  border-bottom: 3px solid grey;
-  border-left: 3px solid black;
-  margin: 10vh, 10vw, 0vh, 10vw;
+  background-image: url("./resources/space.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top: 8px solid black;
+  border-right: 8px solid black;
+  border-bottom: 8px solid black;
+  border-left: 8px solid black;
+  /* margin: 10vh, 10vw, 0vh, 10vw; */
+
+  margin-bottom: 10vh;
 }
 
-#animate {
+#galaxy {
   text-align: center;
-  align-items: cetner;
-  color: white;
-  width: 10vh;
-  height: 10vh;
-  position: relative;
-  left: 40vw;
-  top: 40vh;
+  align-items: center;
+  max-width: 10vh;
+  max-height: 10vh;
+  padding: 0;
   border-radius: 100%;
-  animation-name: end;
+  animation-name: rotateZ;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1, 1, 1, 1);
 }
 
-@keyframes end {
+#center {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 10vh;
+  height: 10vh;
+  animation: rotateZ 3s linear infinite;
+}
+
+#orbit {
+  text-align: center;
+  align-items: center;
+  color: white;
+  max-width: 10vh;
+  height: 10vh;
+  position: relative;
+  left: 8vw;
+  top: 8vh;
+  border-radius: 100%;
+  transform: rotate(30deg);
+}
+
+#ship {
+  max-width: 15vh;
+  max-height: 15vh;
+  transform: rotate(270deg);
+  margin: 4vw;
+  /* animation: rotateX 3s linear infinite; */
+}
+
+@keyframes rotateX {
   0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
+    transform: rotateY(0deg);
+    /* transform: rotate(0deg);
+    left: 10vw;
+    top: 35vh; */
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotateY(-360deg);
+    /* transform: rotate(360deg);
+    left: 10vw;
+    top: 35vh; */
+  }
+}
+
+@keyframes rotateZ {
+  0% {
+    transform: rotateZ(0deg);
+    /* transform: rotate(0deg);
+    left: 10vw;
+    top: 35vh; */
+  }
+  100% {
+    transform: rotateZ(360deg);
+    /* transform: rotate(360deg);
+    left: 10vw;
+    top: 35vh; */
   }
 }
 
